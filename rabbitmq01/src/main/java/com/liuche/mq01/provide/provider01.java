@@ -1,4 +1,4 @@
-package com.liuche.mq.provide;
+package com.liuche.mq01.provide;
 
 import com.liuche.utils.RabbitMqUtils;
 import com.rabbitmq.client.Channel;

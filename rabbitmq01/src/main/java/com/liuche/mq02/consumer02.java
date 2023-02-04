@@ -38,7 +38,7 @@ public class consumer02 {
          * TODO 2.消费成功之后是否要自动应答 true 代表自动应答 false 手动应答
          * 3.消费者未成功消费的回调
          */
-        int prefetchCount = 1;
+        int prefetchCount = 5;
         channel.basicQos(prefetchCount); // TODO 这个将不在进行轮巡操作，谁有空谁就处理消息(注意：所有的消费者都要加)
         channel.basicConsume(QUEUE_NAME, false, deliverCallback, cancelCallback);
     }
